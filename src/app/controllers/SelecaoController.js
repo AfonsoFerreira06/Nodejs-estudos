@@ -11,7 +11,7 @@ class SelecaoController {
         // res.json(pesquisaPorId(req.params.id))
         const id = req.params.id
         const row = await SelecaoRepository.findById(id)
-        res.json(row)
+        res.json(row)   
     }
     async store(req, res) {
         // selecoes.push(req.body)
